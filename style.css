@@ -1,0 +1,365 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 100%;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+hr {
+  background-color: burlywood;
+  width: 95%;
+  margin: 20px auto;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  height: 31rem;
+}
+
+.img-header {
+  position: absolute;
+  right: 0;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+  border-radius: 50%;
+  margin-top: 15px;
+  width: 95%;
+  height: 29rem;
+}
+
+#img-moi {
+  width: 80%;
+  height: 29rem;
+  border-radius: 4%;
+  position: absolute;
+  right: 0;
+}
+
+.motivation,
+.expertise,
+.Sommaire,
+.formation,
+.objectifs {
+  margin-top: 50px;
+  height: 21rem;
+}
+
+.expertise {
+  height: 27rem;
+}
+
+.pres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  font-weight: bold;
+  margin-top: 30%;
+}
+
+.haut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 200px;
+}
+
+#titre {
+  margin-bottom: 10px;
+}
+
+.circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid black;
+  font-size: 25px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.qui-suis-je {
+  height: 30rem;
+}
+
+#texte-moi {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-1 {
+  max-width: 600px;
+  margin: 30px auto;
+  overflow: hidden;
+  border: 1px solid blanchedalmond;
+}
+
+.slider-1 .slider {
+  display: flex;
+  animation: slider-1 10s infinite ease-in-out;
+}
+
+.slider-1 .img-slide {
+  flex-shrink: 0;
+  padding: 72px 0;
+  width: 100%;
+  height: 20rem;
+  object-fit: contain;
+  text-align: center;
+}
+
+#slide-p {
+  margin-top: -30px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+@keyframes slider-1 {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-100%);
+  }
+  50%,
+  70% {
+    transform: translateX(-200%);
+  }
+  75%,
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+
+#circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  border: 4px solid white;
+  font-weight: 400;
+  margin-left: 90px;
+  font-size: 30px;
+}
+
+#para {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+ul {
+  margin-top: 3rem;
+  margin-left: 100px;
+  font-size: 22px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.box {
+  position: relative;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 20rem; /* Ajuste la taille au contenu */
+  height: 6rem;
+  margin: 40px auto; /* Centrer la boîte */
+  text-align: center;
+  font-weight: 500;
+}
+
+.number {
+  position: absolute;
+  top: -15px; /* Dépasse la bordure */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  font-weight: bold;
+  border: 2px solid black; /* Contour du cercle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos {
+  display: inline;
+  margin-top: 5rem;
+  margin-left: 5rem;
+}
+
+h3 {
+  text-align: center;
+  margin-left: 12rem;
+}
+
+.competence {
+  height: 20rem;
+  margin-top: 50px;
+}
+
+#text-box {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact {
+  margin-top: 20px;
+  height: 24rem;
+}
+
+#img-contact {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  margin-top: 2px;
+}
+
+.competence {
+  height: 25rem;
+}
+
+.contact {
+  background-image: url("images/shannon-vandenheuvel-GJNhPjqVAT8-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 798px) {
+  .Sommaire {
+    margin-top: 5rem;
+    height: 37rem;
+  }
+
+  .qui-suis-je {
+    margin-top: 4rem;
+    height: 60rem;
+  }
+  .img-header {
+    width: 350px;
+    height: 350px;
+    margin-right: 15px;
+  }
+
+  #img-moi {
+    margin-right: 25px;
+    margin-top: 10px;
+  }
+  .pres {
+    margin-top: 2rem;
+    margin-left: 70px;
+  }
+
+  header {
+    height: 40rem;
+  }
+
+  .menu {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+  }
+  .circle {
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+
+  .motivation {
+    margin-top: 5rem;
+    height: 63rem;
+  }
+
+  .formation {
+    height: 35rem;
+  }
+
+  #circle {
+    margin: 10px auto 30px 35%;
+  }
+
+  .objectifs {
+    margin-right: 5px;
+    height: 28rem;
+  }
+
+  .competence {
+    height: 28rem;
+  }
+
+  #para {
+    margin-top: -10px;
+  }
+
+  .exple {
+    margin-bottom: 60px;
+  }
+
+  .logo {
+    display: inline;
+    margin-top: 10rem;
+  }
+  .box {
+    margin: 20px auto 30px 15%;
+  }
+
+  .expertise {
+    margin-top: 5rem;
+  }
+
+  #box1 {
+    margin-top: 30px;
+  }
+  #card {
+    margin: 5px auto 20px -50px;
+  }
+
+  .contact {
+    margin-top: 40rem;
+    height: 30rem;
+  }
+}
